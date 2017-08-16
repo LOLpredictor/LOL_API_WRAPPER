@@ -1,0 +1,6 @@
+.idea
+venv
+settings.py
+*~
+.DS_Store
+*.pyc
