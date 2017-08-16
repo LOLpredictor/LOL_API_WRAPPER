@@ -1,8 +1,8 @@
-### About
+# About
 This Repository aim to build a Object Oriented Wrapper for the
 league of legends API.
 
-### Configuration
+# Configuration
 To work on the project:
 
 Download the git repository
