@@ -5,10 +5,15 @@ league of legends API.
 # Configuration
 To work on the project:
 
-Download the git repository
+Download the git repository:
 
 ```
 git clone https://github.com/LOLpredictor/LOL_API_WRAPPER.git
+```
+
+Enter into the repository:
+```
+cd LOL_API_WRAPPER
 ```
 
 
