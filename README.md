@@ -57,6 +57,16 @@ git push
 
 Merge your branch with the master branch:
 ```
+git checkout master
 git merge your_meaningful_branch_name
+```
+
+Delete your old branch:
+```
+git branch -d your_meaningful_branch_name
+```
+
+Push to github:
+```
 git push origin master
 ```
