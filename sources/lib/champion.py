@@ -3,6 +3,7 @@ This file is the implementation of a champion on league of legends.
 The corresponding endpoint is: /lol/static-data/v3/champions/{id}
 A Champion has different attribute:
     - champion_id integer (Id of the champion [id])
+    ....
     - difficulty_level: integer (Level of difficulty to play this champion [info][difficulty])
     - attack_level: integer (Attack level of the champion [info][attack])
     - defense_level: integer (Defense level of the champion [info][defense])
