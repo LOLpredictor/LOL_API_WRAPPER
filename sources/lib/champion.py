@@ -60,7 +60,7 @@ class Champion:
         obj = cls()
         obj.ally_tips =  passive_data["allytips"]
         obj.enemy_tips = passive_data["enemytips"]
-        for i in range(0, 4):
+        for i in range(0, len(passive_data["spells"])):
             obj.spells.append(Spell.spell_from_champion_endpoint(passive_data["spells"][i], i))
         obj.tags = passive_data["tags"]
         obj.name = passive_data["name"]
