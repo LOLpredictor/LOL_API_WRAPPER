@@ -1,4 +1,5 @@
 settings.py
+properties.py
 .idea
 venv
 *~
