@@ -10,7 +10,7 @@ This file is the implementation of a spell on league of legends. A spell has dif
     - image: string (Name of the image of the spell)
     - spell_letter: string (letter to cast the spell)
 """
-
+import requests
 
 class Spell:
 
@@ -52,8 +52,3 @@ class Spell:
         obj.cost_at_level = spell_data["cost"]
         obj.cooldown_at_level = spell_data["cooldown"]
         return obj
-
-
-# todo create a method to_json in the object
-# todo create a method save_to_database
-# todo create a class method spell_from_database
