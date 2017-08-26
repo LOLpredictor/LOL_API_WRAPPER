@@ -101,7 +101,7 @@ call = requests.get(
     "&tags=spells" \
     "&tags=stats" \
     "&tags=tags" \
-    "&api_key=RGAPI-dce602b4-69f7-4e34-bb7e-0cca93415f5f")
+    "&api_key=")
 content = call.json()
 print(content)
 
