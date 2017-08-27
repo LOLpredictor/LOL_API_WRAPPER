@@ -155,35 +155,3 @@ class Champion:
     """
     def __str__(self):
         return self.name + " " + self.title
-
-    """
-    You should create another class call api that will take in its constructor a key. In the api class you define the
-    following function. And you just have to do something like:
-    API = api(settings.API_KEY)
-    API.introduction_champion()
-    """
-    @staticmethod
-    def introduction_champion():
-        call = requests.get(
-            "https://EUW1.api.riotgames.com/lol/static-data/v3/champions/34?locale=en_US"
-            "&tags=all"
-            "&tags=allytips&"
-            "tags=blurb"
-            "&tags=enemytips"
-            "&tags=image"
-            "&tags=info"
-            "&tags=lore"
-            "&tags=partype"
-            "&tags=passive"
-            "&tags=recommended"
-            "&tags=skins"
-            "&tags=spells"
-            "&tags=stats"
-            "&tags=tags"
-            "&api_key=" + API_KEY)
-        content = call.json()
-        champion = Champion.champion_from_riot_api(content)
-        print(champion)
-
-
-Champion.introduction_champion()
