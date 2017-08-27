@@ -10,7 +10,7 @@ This file is the implementation of a spell on league of legends. A spell has dif
     - image: string (Name of the image of the spell)
     - spell_letter: string (letter to cast the spell)
 """
-import requests
+
 
 class Spell:
 

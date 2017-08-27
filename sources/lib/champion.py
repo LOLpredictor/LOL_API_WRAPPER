@@ -48,10 +48,10 @@ A Champion has different attribute:
 from sources.lib.spell import *
 from sources.lib.passive import *
 from sources.lib.skins import *
-from sources.lib.properties import *
-
+from settings import API_KEY
 
 import requests
+
 
 class Champion:
 
@@ -102,79 +102,88 @@ class Champion:
         self.magic = -1
 
 
-
+# Instead of "champion_constructor" I choose a name that is more meaningful if we use multiple constructor
     @classmethod
-    def champion_constructor(cls,passive_data):
+    def champion_from_riot_api(cls, champion_data):
         obj = cls()
-        obj.ally_tips =  passive_data["allytips"]
-        obj.enemy_tips = passive_data["enemytips"]
-        for i in range(0, len(passive_data["spells"])):
-            obj.spells.append(Spell.spell_from_champion_endpoint(passive_data["spells"][i], i))
-        obj.tags = passive_data["tags"]
-        obj.name = passive_data["name"]
-        obj.par_type = passive_data["partype"]
-        obj.passive = Passive.passive_from_champion_endpoint(passive_data["passive"])
-        obj.title = passive_data["title"]
-        obj.blurb = passive_data["blurb"]
-        obj.image = passive_data["image"]["full"]
-        obj.champion_id = passive_data["id"]
-        obj.key = passive_data["key"]
-        obj.lore = passive_data["lore"]
-        for i in range(0, len(passive_data["skins"])):
-            obj.skins.append(Skin.skin_from_champion_endpoint(passive_data["skins"][i]))
+        obj.ally_tips = champion_data["allytips"]
+        obj.enemy_tips = champion_data["enemytips"]
+        for i in range(0, len(champion_data["spells"])):
+            obj.spells.append(Spell.spell_from_champion_endpoint(champion_data["spells"][i], i))
+        obj.tags = champion_data["tags"]
+        obj.name = champion_data["name"]
+        obj.par_type = champion_data["partype"]
+        obj.passive = Passive.passive_from_champion_endpoint(champion_data["passive"])
+        obj.title = champion_data["title"]
+        obj.blurb = champion_data["blurb"]
+        obj.image = champion_data["image"]["full"]
+        obj.champion_id = champion_data["id"]
+        obj.key = champion_data["key"]
+        obj.lore = champion_data["lore"]
+        for skin in range(0, len(champion_data["skins"])):  # avoid using meaning less variable like i/j/z in for loop
+            obj.skins.append(Skin.skin_from_champion_endpoint(champion_data["skins"][skin]))
 
-        obj.hp_regen = passive_data["stats"]["hpregen"]
-        obj.armor_per_level = passive_data["stats"]["armorperlevel"]
-        obj.crit = passive_data["stats"]["crit"]
-        obj.crit_per_level = passive_data["stats"]["critperlevel"]
-        obj.mp = passive_data["stats"]["mp"]
-        obj.attack_damage = passive_data["stats"]["attackdamage"]
-        obj.hp_regen_per_level = passive_data["stats"]["hpregenperlevel"]
-        obj.mp_regen = passive_data["stats"]["mpregen"]
-        obj.spell_block_per_level = passive_data["stats"]["spellblockperlevel"]
-        obj.attack_range = passive_data["stats"]["attackrange"]
-        obj.mp_regen_per_level = passive_data["stats"]["mpregenperlevel"]
-        obj.armor = passive_data["stats"]["armor"]
-        obj.hp = passive_data["stats"]["hp"]
-        obj.attack_damage_per_level = passive_data["stats"]["attackdamageperlevel"]
-        obj.mp_per_level = passive_data["stats"]["mpperlevel"]
-        obj.attack_speed_per_level = passive_data["stats"]["attackspeedperlevel"]
-        obj.hp_per_level = passive_data["stats"]["hpperlevel"]
-        obj.spell_block = passive_data["stats"]["spellblock"]
-        obj.move_speed = passive_data["stats"]["movespeed"]
-        obj.attack_speed_off_set = passive_data["stats"]["attackspeedoffset"]
+        obj.hp_regen = champion_data["stats"]["hpregen"]
+        obj.armor_per_level = champion_data["stats"]["armorperlevel"]
+        obj.crit = champion_data["stats"]["crit"]
+        obj.crit_per_level = champion_data["stats"]["critperlevel"]
+        obj.mp = champion_data["stats"]["mp"]
+        obj.attack_damage = champion_data["stats"]["attackdamage"]
+        obj.hp_regen_per_level = champion_data["stats"]["hpregenperlevel"]
+        obj.mp_regen = champion_data["stats"]["mpregen"]
+        obj.spell_block_per_level = champion_data["stats"]["spellblockperlevel"]
+        obj.attack_range = champion_data["stats"]["attackrange"]
+        obj.mp_regen_per_level = champion_data["stats"]["mpregenperlevel"]
+        obj.armor = champion_data["stats"]["armor"]
+        obj.hp = champion_data["stats"]["hp"]
+        obj.attack_damage_per_level = champion_data["stats"]["attackdamageperlevel"]
+        obj.mp_per_level = champion_data["stats"]["mpperlevel"]
+        obj.attack_speed_per_level = champion_data["stats"]["attackspeedperlevel"]
+        obj.hp_per_level = champion_data["stats"]["hpperlevel"]
+        obj.spell_block = champion_data["stats"]["spellblock"]
+        obj.move_speed = champion_data["stats"]["movespeed"]
+        obj.attack_speed_off_set = champion_data["stats"]["attackspeedoffset"]
 
-        obj.defense = passive_data["info"]["defense"]
-        obj.difficulty = passive_data["info"]["difficulty"]
-        obj.attack = passive_data["info"]["attack"]
-        obj.magic = passive_data["info"]["magic"]
+        obj.defense = champion_data["info"]["defense"]
+        obj.difficulty = champion_data["info"]["difficulty"]
+        obj.attack = champion_data["info"]["attack"]
+        obj.magic = champion_data["info"]["magic"]
         return obj
 
+    """
+    The __str__ function change the print of a class
+    """
+    def __str__(self):
+        return self.name + " " + self.title
+
+    """
+    You should create another class call api that will take in its constructor a key. In the api class you define the
+    following function. And you just have to do something like:
+    API = api(settings.API_KEY)
+    API.introduction_champion()
+    """
     @staticmethod
     def introduction_champion():
         call = requests.get(
-            "https://EUW1.api.riotgames.com/lol/static-data/v3/champions/34?locale=en_US" \
-            "&tags=all" \
-            "&tags=allytips&" \
-            "tags=blurb" \
-            "&tags=enemytips" \
-            "&tags=image" \
-            "&tags=info" \
-            "&tags=lore" \
-            "&tags=partype" \
-            "&tags=passive" \
-            "&tags=recommended" \
-            "&tags=skins" \
-            "&tags=spells" \
-            "&tags=stats" \
-            "&tags=tags" \
-            "&api_key=" +Properties().api )
+            "https://EUW1.api.riotgames.com/lol/static-data/v3/champions/34?locale=en_US"
+            "&tags=all"
+            "&tags=allytips&"
+            "tags=blurb"
+            "&tags=enemytips"
+            "&tags=image"
+            "&tags=info"
+            "&tags=lore"
+            "&tags=partype"
+            "&tags=passive"
+            "&tags=recommended"
+            "&tags=skins"
+            "&tags=spells"
+            "&tags=stats"
+            "&tags=tags"
+            "&api_key=" + API_KEY)
         content = call.json()
-        champion = Champion.champion_constructor(content)
-        print(champion.name + "\n" + champion.title)
+        champion = Champion.champion_from_riot_api(content)
+        print(champion)
 
 
 Champion.introduction_champion()
-
-# todo implement this class (Good luck with that hehe)
-# todo check if there is no other important field to get

@@ -5,9 +5,9 @@ class Skin:
         self.id = -1
 
     @classmethod
-    def skin_from_champion_endpoint(cls, passive_data):
+    def skin_from_champion_endpoint(cls, skin_data):
         obj = cls()
-        obj.num = passive_data["num"]
-        obj.name = passive_data["name"]
-        obj.id = passive_data["id"]
+        obj.num = skin_data["num"]
+        obj.name = skin_data["name"]
+        obj.id = skin_data["id"]
         return obj
