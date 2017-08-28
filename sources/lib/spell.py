@@ -11,6 +11,7 @@ This file is the implementation of a spell on league of legends. A spell has dif
     - spell_letter: string (letter to cast the spell)
 """
 
+import json
 
 class Spell:
 
@@ -52,3 +53,10 @@ class Spell:
         obj.cost_at_level = spell_data["cost"]
         obj.cooldown_at_level = spell_data["cooldown"]
         return obj
+
+
+    def spell_to_json(self):
+        return json.dumps(self.__dict__)
+
+
+print(Spell().spell_to_json())

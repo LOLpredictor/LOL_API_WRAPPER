@@ -12,10 +12,10 @@ class API:
 
     def get_champion_data(self):
         call = requests.get(
-            "https://EUW1.api.riotgames.com/lol/static-data/v3/champions/34?locale=en_US"
+            "https://JP1.api.riotgames.com/lol/static-data/v3/champions/34?locale=en_US"
             "&tags=all"
-            "&tags=allytips&"
-            "tags=blurb"
+            "&tags=allytips"
+            "&tags=blurb"
             "&tags=enemytips"
             "&tags=image"
             "&tags=info"

@@ -5,6 +5,7 @@ This file is the implementation of a passive on league of legends. A passive has
     - image: string (Name of the image of the passive [image][full])
 """
 
+import json
 
 class Passive:
 
@@ -14,12 +15,6 @@ class Passive:
         self.name = ""
         self.image = ""
 
-    """
-    There is no endpoint that provide information about a passive.
-    The object is created from the champion endpoint:
-        /lol/static-data/v3/champions/{id}
-    This method build a passive from the JSON present in the champion data [passive]:
-    """
     @classmethod
     def passive_from_champion_endpoint(cls, passive_data):
         obj = cls()
@@ -28,7 +23,11 @@ class Passive:
         obj.image = passive_data["image"]["full"]
         return obj
 
+    def passive_to_json(self):
+        return json.dumps(self.__dict__)
 
+
+print(Passive().passive_to_json())
 # todo create a method to_json in the object
 # todo create a method save_to_database
 # todo create a class method passive_from_database

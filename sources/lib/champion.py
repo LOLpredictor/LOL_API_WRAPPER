@@ -38,24 +38,16 @@ A Champion has different attribute:
     - defense_level: integer (Defense level of the champion [info][defense])
     - magic_level: integer (Magic level of the champion [info][magic])
 
-    //// What Edwyn add
-
     -partype String (What does the spell cost (MANA/RAGE...))
-    -blurb String (return ?? ... like some description)
-    -key String (return name ..)??
 """
 
 from sources.lib.spell import *
 from sources.lib.passive import *
 from sources.lib.skins import *
-from settings import API_KEY
-
-import requests
+import json
 
 
 class Champion:
-
-    # Default constructor, shouldn't be called
     def __init__(self):
         self.champion_id = -1
         self.name = ""
@@ -72,8 +64,6 @@ class Champion:
         self.key = ""
         self.recommended = []
         self.skins = []
-
-        #          STATS
         self.hp_regen = -1.0
         self.armor_per_level = -1.0
         self.crit = -1.0
@@ -94,15 +84,12 @@ class Champion:
         self.spell_block = -1.0
         self.move_speed = -1.0
         self.attack_speed_off_set = -1.0
-
-        # INFO
         self.defense = -1
         self.difficulty = -1
         self.attack = -1
         self.magic = -1
 
 
-# Instead of "champion_constructor" I choose a name that is more meaningful if we use multiple constructor
     @classmethod
     def champion_from_riot_api(cls, champion_data):
         obj = cls()
@@ -122,6 +109,8 @@ class Champion:
         obj.lore = champion_data["lore"]
         for skin in range(0, len(champion_data["skins"])):  # avoid using meaning less variable like i/j/z in for loop
             obj.skins.append(Skin.skin_from_champion_endpoint(champion_data["skins"][skin]))
+
+        # STATS
 
         obj.hp_regen = champion_data["stats"]["hpregen"]
         obj.armor_per_level = champion_data["stats"]["armorperlevel"]
@@ -144,14 +133,19 @@ class Champion:
         obj.move_speed = champion_data["stats"]["movespeed"]
         obj.attack_speed_off_set = champion_data["stats"]["attackspeedoffset"]
 
+        #       INFO
+
         obj.defense = champion_data["info"]["defense"]
         obj.difficulty = champion_data["info"]["difficulty"]
         obj.attack = champion_data["info"]["attack"]
         obj.magic = champion_data["info"]["magic"]
         return obj
 
-    """
-    The __str__ function change the print of a class
-    """
     def __str__(self):
-        return self.name + " " + self.title
+        return self.name + " " + self.champion_id
+
+    def champion_to_json(self):
+        return json.dumps()
+
+champion = Champion().champion_from_riot_api()
+print(champion.champion_to_json())
