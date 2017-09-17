@@ -54,9 +54,5 @@ class Spell:
         obj.cooldown_at_level = spell_data["cooldown"]
         return obj
 
-
-    def spell_to_json(self):
-        return json.dumps(self.__dict__)
-
-
-print(Spell().spell_to_json())
+    def to_dict(self):
+        return self.__dict__

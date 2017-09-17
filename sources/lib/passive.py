@@ -23,11 +23,10 @@ class Passive:
         obj.image = passive_data["image"]["full"]
         return obj
 
-    def passive_to_json(self):
-        return json.dumps(self.__dict__)
+    def to_dict(self):
+        return self.__dict__
 
 
-print(Passive().passive_to_json())
 # todo create a method to_json in the object
 # todo create a method save_to_database
 # todo create a class method passive_from_database

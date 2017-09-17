@@ -29,5 +29,6 @@ class API:
             "&tags=tags"
             "&api_key=" + self.key)
         content = call.json()
+        print(content)
         champion = Champion.champion_from_riot_api(content)
         return champion
