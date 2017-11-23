@@ -48,15 +48,14 @@ class Spell:
         obj.level_max = spell_data["maxrank"]
         obj.description = spell_data["description"]
         obj.image = spell_data["image"]["full"]
-        obj.cost_type = spell_data["costType"]
+        try:
+            obj.cost_type = spell_data["costType"]
+        except:
+            pass
         obj.range_at_level = spell_data["range"]
         obj.cost_at_level = spell_data["cost"]
         obj.cooldown_at_level = spell_data["cooldown"]
         return obj
 
-
-    def spell_to_json(self):
-        return json.dumps(self.__dict__)
-
-
-print(Spell().spell_to_json())
+    def to_dict(self):
+        return self.__dict__

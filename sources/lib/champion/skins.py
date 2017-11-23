@@ -1,5 +1,6 @@
 import json
 
+
 class Skin:
     def __init__(self):
         self.num = -1
@@ -14,8 +15,7 @@ class Skin:
         obj.id = skin_data["id"]
         return obj
 
-    def skin_to_json(self):
-        return json.dumps(self.__dict__)
+    def to_dict(self):
+        return self.__dict__
 
-print(Skin().skin_to_json())
 

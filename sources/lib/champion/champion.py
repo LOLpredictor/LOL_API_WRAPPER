@@ -41,29 +41,23 @@ A Champion has different attribute:
     -partype String (What does the spell cost (MANA/RAGE...))
 """
 
-from sources.lib.spell import *
-from sources.lib.passive import *
-from sources.lib.skins import *
 import json
+
+from sources.lib.champion.passive import *
+from sources.lib.champion.spell import *
+
+from sources.lib.champion.skins import *
 
 
 class Champion:
     def __init__(self):
         self.champion_id = -1
         self.name = ""
-        self.title = ""
         self.tags = []
-        self.passive = Passive
         self.spells = []
-        self.ally_tips = []
-        self.enemy_tips = []
-        self.lore = ""
         self.par_type = ""
-        self.blurb = ""
-        self.image = ""
-        self.key = ""
-        self.recommended = []
-        self.skins = []
+        self.skins = []   # Inutile mais j'aimerai vérifier si avec un skin les gens jouent mieux
+
         self.hp_regen = -1.0
         self.armor_per_level = -1.0
         self.crit = -1.0
@@ -84,29 +78,22 @@ class Champion:
         self.spell_block = -1.0
         self.move_speed = -1.0
         self.attack_speed_off_set = -1.0
+
         self.defense = -1
         self.difficulty = -1
         self.attack = -1
         self.magic = -1
 
-
     @classmethod
     def champion_from_riot_api(cls, champion_data):
         obj = cls()
-        obj.ally_tips = champion_data["allytips"]
-        obj.enemy_tips = champion_data["enemytips"]
         for i in range(0, len(champion_data["spells"])):
             obj.spells.append(Spell.spell_from_champion_endpoint(champion_data["spells"][i], i))
         obj.tags = champion_data["tags"]
         obj.name = champion_data["name"]
         obj.par_type = champion_data["partype"]
-        obj.passive = Passive.passive_from_champion_endpoint(champion_data["passive"])
-        obj.title = champion_data["title"]
-        obj.blurb = champion_data["blurb"]
-        obj.image = champion_data["image"]["full"]
         obj.champion_id = champion_data["id"]
-        obj.key = champion_data["key"]
-        obj.lore = champion_data["lore"]
+
         for skin in range(0, len(champion_data["skins"])):  # avoid using meaning less variable like i/j/z in for loop
             obj.skins.append(Skin.skin_from_champion_endpoint(champion_data["skins"][skin]))
 
@@ -141,11 +128,64 @@ class Champion:
         obj.magic = champion_data["info"]["magic"]
         return obj
 
+    #@classmethod
+    #def get_champion_from_file(cls, file_path="../../data/anivia.json"):
+    #    with open(file_path, 'r') as file:
+    #        champion_data = json.load(file)
+    #    obj = cls.champion_from_riot_api(champion_data)
+    #    return obj
+
+    @classmethod
+    def to_json(cls):
+        obj = cls()
+        print(obj.name)
+        print('../../data/champion'+obj.name+'.json')
+        with open('../../data/champion'+obj.name+'.json', 'w') as f:
+            json.dump(obj, f)
+
+
     def __str__(self):
-        return self.name + " " + self.champion_id
+        return self.name + " " + str(self.champion_id)
 
-    def champion_to_json(self):
-        return json.dumps()
+    def to_dict(self):
+        spells_dict = []
+        for spell in self.spells:
+            spells_dict.append(spell.to_dict())
+        skins_dict = []
+        for skin in self.skins:
+            skins_dict.append(skin.to_dict())
+        return dict(
+            champion_id=self.champion_id,
+            name=self.name,
+            tags=self.tags,
+            spells=spells_dict,
+            par_type=self.par_type,
+            skins=skins_dict,
+            hp_regen=self.hp_regen,
+            armor_per_level=self.armor_per_level,
+            crit=self.crit,
+            crit_per_level=self.crit_per_level,
+            mp=self.mp,
+            attack_damage=self.attack_damage,
+            hp_regen_per_level=self.hp_regen_per_level,
+            mp_regen=self.mp_regen,
+            spell_block_per_level=self.spell_block_per_level,
+            attack_range=self.attack_range,
+            mp_regen_per_level=self.mp_regen_per_level,
+            armor=self.armor,
+            hp=self.hp,
+            attack_damage_per_level=self.attack_damage_per_level,
+            mp_per_level=self.mp_per_level,
+            attack_speed_per_level=self.attack_speed_per_level,
+            hp_per_level=self.hp_per_level,
+            spell_block=self.spell_block,
+            move_speed=self.move_speed,
+            attack_speed_off_set=self.attack_speed_off_set,
+            defense=self.defense,
+            difficulty=self.difficulty,
+            attack=self.attack,
+            magic=self.magic,
+        )
 
-champion = Champion().champion_from_riot_api()
-print(champion.champion_to_json())
+
+
