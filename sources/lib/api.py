@@ -16,12 +16,12 @@ class API:
         self.key = key
 
     def get_user_data(self,country,name):
-        call = requests.get("https://EUW1.api.riotgames.com/lol/summoner/v3/summoners/by-name/"+name)
+        call = requests.get("https://"+country+".api.riotgames.com/lol/summoner/v3/summoners/by-name/"+name+"?api_key="+self.key)
+        print("https://"+country+".api.riotgames.com/lol/summoner/v3/summoners/by-name/"+name)
         content = call.json()
-        print(content)
-        user = User(country)
-        user.user_from_riot_api(content)
-        user.to_json()
+        user = User.user_from_riot_api(content)
+        user.to_json(country)
+
 
 
     def get_champion_data(self):

@@ -188,4 +188,63 @@ class Champion:
         )
 
 
+    @classmethod
+    def get_champion_from_file(cls, file_path="../../data/anivia.json"):
+        with open(file_path, 'r') as file:
+            champion_data = json.load(file)
+        obj = cls.champion_from_riot_api(champion_data)
+        return obj
+
+    def __str__(self):
+        return self.name + " " + str(self.champion_id)
+
+    def to_dict(self):
+        spells_dict = []
+        for spell in self.spells:
+            spells_dict.append(spell.to_dict())
+        skins_dict = []
+        for skin in self.skins:
+            skins_dict.append(skin.to_dict())
+        return dict(
+            champion_id=self.champion_id,
+            name=self.name,
+            title=self.title,
+            tags=self.tags,
+            passive=self.passive.to_dict(),
+            spells=spells_dict,
+            ally_tips=self.ally_tips,
+            enemy_tips=self.enemy_tips,
+            lore=self.lore,
+            par_type=self.par_type,
+            blurb=self.blurb,
+            image=self.image,
+            key=self.key,
+            recommended=self.recommended,
+            skins=skins_dict,
+            hp_regen=self.hp_regen,
+            armor_per_level=self.armor_per_level,
+            crit=self.crit,
+            crit_per_level=self.crit_per_level,
+            mp=self.mp,
+            attack_damage=self.attack_damage,
+            hp_regen_per_level=self.hp_regen_per_level,
+            mp_regen=self.mp_regen,
+            spell_block_per_level=self.spell_block_per_level,
+            attack_range=self.attack_range,
+            mp_regen_per_level=self.mp_regen_per_level,
+            armor=self.armor,
+            hp=self.hp,
+            attack_damage_per_level=self.attack_damage_per_level,
+            mp_per_level=self.mp_per_level,
+            attack_speed_per_level=self.attack_speed_per_level,
+            hp_per_level=self.hp_per_level,
+            spell_block=self.spell_block,
+            move_speed=self.move_speed,
+            attack_speed_off_set=self.attack_speed_off_set,
+            defense=self.defense,
+            difficulty=self.difficulty,
+            attack=self.attack,
+            magic=self.magic,
+        )
+
 

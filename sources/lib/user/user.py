@@ -9,39 +9,39 @@
 import json
 
 class User:
-    def __init__(self,country):
-        self.name = None
-        self.summonerLevel = None
-        self.id = None
-        self.accountID = None
-        self.countryBelong = country
+    def __init__(self):
+        self.name = ""
+        self.summonerLevel = ""
+        self.id = 0
+        self.accountID = 0
+
 
 
     @classmethod
     def user_from_riot_api(cls, user_data):
         obj = cls()
+        print(user_data)
         obj.name = user_data["name"]
         obj.summonerLevel = user_data["summonerLevel"]
         obj.id = user_data["id"]
-        obj.accountID = user_data["accountID"]
+        obj.accountID = user_data["accountId"]
         return  obj
 
 
-    @classmethod
-    def to_json(cls):
-        obj = cls()
-        print('User Created  : ../../data/user/'+obj.countryBelong + "/"+obj.accountID+'.json')
-        with open('../../data/user/'+obj.countryBelong + "/"+obj.accountID+'.json', 'w') as f:
-            json.dump(obj.to_dict(), f)
+
+    def to_json(self,country):
+        print('User Created  : ../../data/user/'+country + "/"+str(self.accountID)[:-1]+'.json')
+        with open('../../data/user/'+country + "/"+str(self.accountID)[:-1]+'.json', 'w') as f:
+            json.dump(self.to_dict(country), f)
 
 
     def __str__(self):
         return self.name + " " + str(self.accountID)
 
-    def to_dict(self):
+    def to_dict(self,country):
         return dict(
             accountID = self.accountID,
-            countryBelong = self.countryBelong,
             id=self.id,
             name = self.name,
-            summonerLevel = self.summonerLevel)
+            summonerLevel = self.summonerLevel,
+            country = country)
