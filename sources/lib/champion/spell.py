@@ -51,7 +51,7 @@ class Spell:
         try:
             obj.cost_type = spell_data["costType"]
         except:
-            pass
+            obj.cost_type = None
         obj.range_at_level = spell_data["range"]
         obj.cost_at_level = spell_data["cost"]
         obj.cooldown_at_level = spell_data["cooldown"]

@@ -14,6 +14,7 @@ class User:
         self.summonerLevel = ""
         self.id = 0
         self.accountID = 0
+        self.country = ""
 
 
 

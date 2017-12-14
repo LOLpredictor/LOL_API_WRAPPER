@@ -4,12 +4,12 @@ Create an instance to call the riot API
 
 import requests
 import json
-import settings
-from data import *
+
 from elasticsearch import Elasticsearch
 from sources.lib.champion.champion import Champion
 from sources.lib.user.user import User
 from glob import glob
+from sources.lib.match.game import Game
 
 class API:
     def __init__(self, key):
@@ -22,6 +22,15 @@ class API:
         user = User.user_from_riot_api(content)
         user.to_json(country)
 
+
+    def get_match_data(self,country,id):
+        call = requests.get("https://"+country+".api.riotgames.com/lol/match/v3/matches/"+id+"?api_key="+self.key)
+        print("https://"+country+".api.riotgames.com/lol/match/v3/matches/"+id)
+        content = call.json()
+        game = Game.game_data(content)
+        print("get match data " + country)
+        print(game)
+        Game.to_json(game,country)
 
 
     def get_champion_data(self):
