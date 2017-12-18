@@ -4,9 +4,11 @@ import json
 import requests
 
 api = API(settings.API_KEY)
-#api.get_user_data("EUW1","Jagang")
 
-api.get_match_data("EUW1","2997006172")
+
+api.collect_match_data("/v1/stats/player_history/EUW1/223830393","440")
+#api.get_user_data("EUW1","Jagang")
+#api.get_match_data("EUW1","53396441")
 
 #api.get_champions_data()
 #api.send_all_json_champion()
