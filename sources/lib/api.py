@@ -126,7 +126,6 @@ class API:
                 champions.append(content["keys"][str(i)])
             except:
                 pass
-        print("Le champion qui va être mis sous format Json est : " + champions)
         for i in range (0,len(champions)):
             champion = Champion.champion_from_riot_api(content["data"][champions[i]])
             print('Le path du Json est le suivant : ../../data/champion/' + champion.name + '.json')
@@ -135,21 +134,19 @@ class API:
 
     def send_all_json_game(self):
         es = Elasticsearch()
-        i = 1
         for path in glob('../../data/game/EUW1/*.json'):
             print("Le path suivant sera envoyé dans la base elasticsearch : " + path)
             with open(path) as data_file:
                 data = json.load(data_file)
-            es.index(index="game", doc_type='game_detail', body=data, id=i)
-            i += 1
+            es.index(index="game", doc_type='game_ranked_flex', body=data, id=data["gameId"])
+
 
     def send_all_json_champion(self):
         es = Elasticsearch()
-        i = 1
         for path in glob('../../data/champion/*.json'):
             print("Le path suivant sera envoyé dans la base elasticsearch : " + path)
             with open(path) as data_file:
                 data = json.load(data_file)
-
             es.index(index="champion", doc_type='information_globale', body=data, id=data["champion_id"])
-            i += 1
+
+
