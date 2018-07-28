@@ -1,8 +1,8 @@
+import time
+
+import settings
 from sources.lib.api import *
 from sources.lib.match.game import *
-from sources.lib.match.player import *
-import settings
-import time
 
 #Variable globale
 

@@ -2,28 +2,27 @@
 Create an instance to call the riot API
 """
 
-import requests
-import json
-from logging import *
-from elasticsearch import Elasticsearch
-from sources.lib.champion.champion import Champion
-from sources.lib.user.user import User
-from glob import glob
-from sources.lib.match.game import Game
-from sources.lib.match.player import Player
-from sources.lib.match.player import Player
+import settings,requests
+from utilities import Utility
+
 
 class API:
-    def __init__(self, key):
-        self.nombreRequete = 0
-        self.key = key
 
-    def get_user_data(self,country,name):
-        call = requests.get("https://"+country+".api.riotgames.com/lol/summoner/v3/summoners/by-name/"+name+"?api_key="+self.key)
-        info("Voici l'url d'accès pour l'utilisateur : " + name + " \n https://"+country+".api.riotgames.com/lol/summoner/v3/summoners/by-name/"+name +"?api_key="+self.key)
-        content = call.json()
-        user = User.user_from_riot_api(content)
-        user.to_json(country)
+    def __init__(self):
+        self.requestNumber = 0
+        self.key = settings.API_KEY
+
+    def get_summoner(self,name=None,account_id=None,localisation=None):
+        if all([name,localisation]):
+            call = requests.get(Utility.URL_SUMMONER_BY_NAME.format(localisation,name,self.key))
+        elif all([account_id,localisation]):
+            call = requests.get(Utility.URL_SUMMONER_BY_ACCOUNT.format(localisation,account_id,self.key))
+        else:
+            raise Exception('The name or the account id and the localisation have to be set!')
+        return call.json()
+
+
+"""
 
     def get_match_data(self,country,id):
         insertion = True
@@ -147,6 +146,8 @@ class API:
             print("Le path suivant sera envoyé dans la base elasticsearch : " + path)
             with open(path) as data_file:
                 data = json.load(data_file)
-            es.index(index="champion", doc_type='information_globale', body=data, id=data["champion_id"])
+                print(type(data))
+            #es.index(index="champion", doc_type='information_globale', body=data, id=data["champion_id"])
+"""
 
 

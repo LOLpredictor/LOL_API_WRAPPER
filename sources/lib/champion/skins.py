@@ -1,6 +1,5 @@
 import json
 
-
 class Skin:
     def __init__(self):
         self.num = -1
