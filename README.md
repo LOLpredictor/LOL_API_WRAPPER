@@ -72,3 +72,16 @@ git push origin master
 ```
 
 If you want a better understanding, check this article out: https://confluence.atlassian.com/bitbucket/use-a-git-branch-to-merge-a-file-681902555.html
+
+
+# Run Flask
+
+To run flask use the command below
+
+```
+export FLASK_APP=app.py
+python -m flask run
+# if you type only
+flask run
+#there will be some modules import failure
+```
