@@ -81,7 +81,11 @@ To run flask use the command below
 ```
 export FLASK_APP=app.py
 python -m flask run
-# if you type only
-flask run
-#there will be some modules import failure
 ```
+
+You can be used to only use
+```
+flask run
+```
+But there will be some module import failures
+
