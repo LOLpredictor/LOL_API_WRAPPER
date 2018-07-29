@@ -16,6 +16,10 @@ class Utility:
     URL_SUMMONER_BY_NAME = "https://{}.api.riotgames.com/lol/summoner/v3/summoners/by-name/{}" + END_URL
     URL_SUMMONER_BY_ACCOUNT = "https://{}.api.riotgames.com/lol/summoner/v3/summoners/by-account/{}" + END_URL
 
+    # Url to get information about player mastery
+    URL_ALL_CHAMPIONS_MASTERY = "https://{}.api.riotgames.com/lol/" \
+                                "champion-mastery/v3/champion-masteries/by-summoner/{}" + END_URL
+
     # Language code to get a JSON with the good language
     UNITED_KINGDOM = "en_GB"
     UNITED_STATE = "en_US"
@@ -86,6 +90,16 @@ class Utility:
     SUMMONER_ACCOUNT_ID = 'accountId'
     TAB_CHARACTERISTICS_SUMMONER = [SUMMONER_NAME, SUMMONER_ICON_ID, SUMMONER_LEVEL, SUMMONER_REVISION_DATE,
                                     SUMMONER_ID, SUMMONER_ACCOUNT_ID]
+
+    #About champion mastery
+    CHAMPION_MASTERY_PLAYER_ID = "playerId"
+    CHAMPION_MASTERY_CHAMPION_ID = "championId"
+    CHAMPION_MASTERY_CHAMPION_LEVEL = "championLevel"
+    CHAMPION_MASTERY_CHAMPION_POINTS = "championPoints"
+    CHAMPION_MASTERY_LAST_PLAY = "lastPlayTime"
+    TAB_CHARACTERISTICS_CHAMPION_MASTERY = [CHAMPION_MASTERY_PLAYER_ID,CHAMPION_MASTERY_CHAMPION_ID,
+                                            CHAMPION_MASTERY_CHAMPION_LEVEL,CHAMPION_MASTERY_CHAMPION_POINTS,
+                                            CHAMPION_MASTERY_LAST_PLAY]
 
     @staticmethod
     def epoch_to_date_time(millisecond):

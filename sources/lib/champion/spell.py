@@ -1,3 +1,30 @@
+class Spell:
+    def __init__(self):
+        self.costType = str
+        self.maxrank = int
+        self.cooldown = []
+        self.cost = []
+        self.effectBurn = []
+        self.effect = None
+        self.range = None
+        self.costType = None
+        self.vars = None
+        self.name = None
+        self.rangeBurn= int
+        self.resource = str
+        self.image = str
+        self.description = str
+
+    def __str__(self):
+        return 'Spell\'s name : {}\nMaxrank : {}\nCooldown : {}\nCost : {}\nEffectBurn : {}\nEffect : {}' \
+               '\nRange : {}\nCostType : {}\nVars : {}\nRangeBurn : {}\nRessource : {}\nImage : {}\n' \
+               'Description : {}\n ---------------------'.format(self.name, self.maxrank, self.cooldown,self.cost,self.effectBurn,
+                                         self.effect,self.range,self.costType,self.vars,self.rangeBurn,
+                                         self.resource,self.image,self.description)
+
+    def __repr__(self):
+        return self.__str__()
+
 """
 This file is the implementation of a spell on league of legends. A spell has different attribute:
     - level_max: integer (Maximum level of the spell)
@@ -9,7 +36,7 @@ This file is the implementation of a spell on league of legends. A spell has dif
     - cooldown_at_level: list of floats (Cooldown of the spell at all different level)
     - image: string (Name of the image of the spell)
     - spell_letter: string (letter to cast the spell)
-"""
+
 
 import json
 
@@ -27,12 +54,12 @@ class Spell:
         self.cost_at_level = []
         self.cooldown_at_level = []
 
-    """
+
     There is no endpoint that provide information about spells.
     The object is created from the champion endpoint:
         /lol/static-data/v3/champions/{id}
     This method build a spell from one of the JSON present in the champion data list [spells]:
-    """
+
     @classmethod
     def spell_from_champion_endpoint(cls, spell_data, indice):
         obj = cls()
@@ -59,3 +86,4 @@ class Spell:
 
     def to_dict(self):
         return self.__dict__
+"""

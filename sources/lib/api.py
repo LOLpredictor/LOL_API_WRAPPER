@@ -7,6 +7,7 @@ from utilities import Utility
 
 
 class API:
+    EMPTY_TAB = 0
 
     def __init__(self):
         self.requestNumber = 0
@@ -20,6 +21,38 @@ class API:
         else:
             raise Exception('The name or the account id and the localisation have to be set!')
         return call.json()
+
+    def get_all_champions_mastery(self,summoner_id=None,localisation=None):
+        if all([summoner_id,localisation]):
+            call = requests.get(Utility.URL_ALL_CHAMPIONS_MASTERY.format(localisation,summoner_id,self.key))
+        else:
+            raise Exception('The localisation and the summoner id have to be set!')
+        return call.json()
+
+    # Json with a specific champion data
+    def get_champion_data_id(self, id, localisation, language, *args):
+        if len(args) == API.EMPTY_TAB:
+            call = requests.get(Utility.URL_CHAMPION_ID.format(localisation,id,language, self.key))
+        else:
+            call = requests.get(API._prepare_request(Utility.URL_BASE_CHAMPION_ID
+                                                     , Utility.END_URL_CHAMPION_ID, args).format(localisation,
+                                                                                                 id, language, *args,
+                                                                                                 self.key))
+        print(API._prepare_request(Utility.URL_BASE_CHAMPION_ID
+                                                     , Utility.END_URL_CHAMPION_ID, args).format(localisation,
+                                                                                                 id, language, *args,
+                                                                                                 self.key))
+
+        print(call.json())
+        return call.json()
+
+    #  Add all tags for request
+    @staticmethod
+    def _prepare_request(url_base, url_end, args):
+        for info in [x for x in args if isinstance(x, str)]:
+            url_base += "&tags={}"
+        url_base += url_end
+        return url_base
 
 
 """

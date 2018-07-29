@@ -26,28 +26,31 @@ class User:
         self.id = int()
         self.accountId = int()
         self.profileIconId = int()
-        self.revisionDate = int()
+        self.revisionDate = None
 
-    def user_from_riot_api(self, user_data):
-
+    @classmethod
+    def user_from_riot_api(cls,user_data):
+        obj = cls()
         for key in Utility.TAB_CHARACTERISTICS_SUMMONER:
-            print('key: {} - value : {}'.format(key, user_data[key]))
-            self.__setattr__(key, user_data[key])
+            if key == Utility.SUMMONER_REVISION_DATE:
+                object.__setattr__(obj, key, Utility.epoch_to_date_time(user_data[key]))
+            else:
+                object.__setattr__(obj, key, user_data[key])
+        return obj
 
     def to_json(self,country):
         with open('data/user/{}/{}.json'.format(country,self.accountId), 'w+') as f:
             json.dump(self.to_dict(country), f)
-
 
     def __str__(self):
         return self.name + " " + str(self.accountId)
 
     def to_dict(self,country):
         return dict(
-            accountId = self.accountId,
+            accountId=self.accountId,
             id=self.id,
-            name = self.name,
-            summonerLevel = self.summonerLevel,
-            profileIconId = self.profileIconId,
-            revisionDate = self.revisionDate,
-            country = country)
+            name=self.name,
+            summonerLevel=self.summonerLevel,
+            profileIconId=self.profileIconId,
+            revisionDate=self.revisionDate,
+            country=country)

@@ -11,7 +11,7 @@
         {% include 'navbar.html' %}
         <div class="container mt-5">
             <p class="text-center">
-                <img src="static/image/profileicon/{{user.profileIconId}}.png" class="rounded-circle" alt="Cinque Terre">
+                <img src="static/image/profileicon/{{user.profileIconId}}.png" style='width:250px;max-width:250px'class="rounded-circle" alt="Cinque Terre">
             </p>
         </div>
         <div class="container"   style="background-color:#212529">
@@ -22,8 +22,17 @@
                 <div class="col-6">
                     <p style="color:white">
                         Level : {{user.summonerLevel}} <br>
-                        Last time connected : {{user.revisionDate}}
+                        Last time connected : {{user.revisionDate}} <br>
+                        Summoner id : {{user.id}}
                     </p>
+                    {% for championMastery in championM %}
+                        <figure>
+                            <img src="static/image/champion/{{championMastery.championName}}.png">
+                            <figcaption>{{championMastery.championPoints}}</figcaption>
+                        </figure>
+
+
+                    {% endfor %}
                 </div>
             </div>
         </div>

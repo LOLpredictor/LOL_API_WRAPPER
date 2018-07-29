@@ -1,0 +1,379 @@
+2018-07-29 02:44:02,592 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:44:10,232 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:44:10,473 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/winter%20kay?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:44:10,480 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:44:10,712 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51499511?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:44:10,738 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:44:10] "POST /searchUser HTTP/1.1" 500 -
+2018-07-29 02:46:13,511 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:46:13,783 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/winter%20kay?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 132
+2018-07-29 02:46:13,802 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:46:14,062 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51499511?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:46:14,079 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:46:14] "POST /searchUser HTTP/1.1" 500 -
+2018-07-29 02:48:56,820 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:49:04,328 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:49:04] "GET / HTTP/1.1" 200 -
+2018-07-29 02:49:08,353 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:08,914 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/winter%20kay?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:49:08,931 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:09,202 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51499511?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:49:09,226 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:09,444 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:49:09,451 -- root -- INFO -- Instanciation
+2018-07-29 02:49:09,466 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:09,700 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:49:09,711 -- root -- INFO -- Instanciation
+2018-07-29 02:49:09,721 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:09,938 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:49:09,951 -- root -- INFO -- Instanciation
+2018-07-29 02:49:09,979 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:49:09] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:49:10,051 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:49:10] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:49:41,315 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:49:42,816 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:43,091 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/winter%20kay?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:49:43,115 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:43,411 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51499511?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:49:43,435 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:43,677 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 71
+2018-07-29 02:49:43,684 -- root -- INFO -- Instanciation
+2018-07-29 02:49:43,694 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:43,956 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:49:43,964 -- root -- INFO -- Instanciation
+2018-07-29 02:49:43,981 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:49:44,185 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:49:44,196 -- root -- INFO -- Instanciation
+2018-07-29 02:49:44,248 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:49:44] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:49:44,347 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:49:44] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:50:21,678 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:50:24,645 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:25,153 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/winter%20kay?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 132
+2018-07-29 02:50:25,174 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:25,847 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51499511?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:50:25,870 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:26,588 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:50:26,597 -- root -- INFO -- Instanciation
+2018-07-29 02:50:26,606 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:27,081 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:50:27,091 -- root -- INFO -- Instanciation
+2018-07-29 02:50:27,108 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:27,289 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:50:27,295 -- root -- INFO -- Instanciation
+2018-07-29 02:50:27,355 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:50:27] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:50:27,406 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:50:27] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:50:54,013 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:54,242 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/winter%20kay?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:50:54,266 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:54,545 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51499511?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:50:54,564 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:54,981 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:50:54,987 -- root -- INFO -- Instanciation
+2018-07-29 02:50:54,999 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:55,199 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:50:55,208 -- root -- INFO -- Instanciation
+2018-07-29 02:50:55,223 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:50:55,429 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:50:55,442 -- root -- INFO -- Instanciation
+2018-07-29 02:50:55,446 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:50:55] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:50:55,528 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:50:55] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:51:14,308 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:51:17,110 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:17,358 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/winter%20kay?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:51:17,381 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:17,650 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51499511?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:51:17,675 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:17,879 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:51:17,885 -- root -- INFO -- Instanciation
+2018-07-29 02:51:17,896 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:18,145 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:51:18,148 -- root -- INFO -- Instanciation
+2018-07-29 02:51:18,153 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:18,360 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 None
+2018-07-29 02:51:18,372 -- root -- INFO -- Instanciation
+2018-07-29 02:51:18,399 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:51:18] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:51:18,441 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:51:18] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:51:34,761 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:51:46,438 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:51:46] "GET / HTTP/1.1" 200 -
+2018-07-29 02:51:52,075 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:52,342 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/melvynator?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:51:52,367 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:52,702 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51776070?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:51:52,725 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:52,958 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:51:52,968 -- root -- INFO -- Instanciation
+2018-07-29 02:51:52,979 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:53,188 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:51:53,197 -- root -- INFO -- Instanciation
+2018-07-29 02:51:53,213 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:51:53,438 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:51:53,444 -- root -- INFO -- Instanciation
+2018-07-29 02:51:53,469 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:51:53] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:51:53,552 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:51:53] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:52:23,604 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:52:28,000 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:52:28,382 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/winter%20kay?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:52:28,401 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:52:28,682 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/51499511?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:52:28,708 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:52:28,924 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 None
+2018-07-29 02:52:28,931 -- root -- INFO -- Instanciation
+2018-07-29 02:52:28,940 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:52:29,169 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:52:29,176 -- root -- INFO -- Instanciation
+2018-07-29 02:52:29,185 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): euw1.api.riotgames.com
+2018-07-29 02:52:29,388 -- urllib3.connectionpool -- DEBUG -- https://euw1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:52:29,398 -- root -- INFO -- Instanciation
+2018-07-29 02:52:29,457 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:52:29] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:52:29,509 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:52:29] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:53:37,590 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:53:39,198 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:53:39,221 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:53:40,838 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/1183421?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:53:40,860 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:53:43,708 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 503 62
+2018-07-29 02:53:43,716 -- root -- INFO -- Instanciation
+2018-07-29 02:53:43,727 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:53:45,340 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:53:45,350 -- root -- INFO -- Instanciation
+2018-07-29 02:53:45,363 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:53:48,619 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 503 62
+2018-07-29 02:53:48,621 -- root -- INFO -- Instanciation
+2018-07-29 02:53:48,622 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:53:48] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:53:48,650 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:53:48] "GET /static/image/profileicon/1297.png HTTP/1.1" 200 -
+2018-07-29 02:53:48,708 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:53:48] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:54:18,354 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:20,159 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 123
+2018-07-29 02:54:20,170 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:21,800 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/1183421?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:54:21,826 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:23,548 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:54:23,556 -- root -- INFO -- Instanciation
+2018-07-29 02:54:23,560 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:25,279 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:54:25,288 -- root -- INFO -- Instanciation
+2018-07-29 02:54:25,299 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:26,882 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 71
+2018-07-29 02:54:26,892 -- root -- INFO -- Instanciation
+2018-07-29 02:54:26,896 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:54:26] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:54:26,968 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:54:26] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:54:38,471 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:40,027 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/fak?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 126
+2018-07-29 02:54:40,040 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:41,665 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/20750426?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:54:41,690 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:43,299 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 71
+2018-07-29 02:54:43,305 -- root -- INFO -- Instanciation
+2018-07-29 02:54:43,317 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:44,941 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:54:44,953 -- root -- INFO -- Instanciation
+2018-07-29 02:54:44,960 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:54:46,579 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:54:46,586 -- root -- INFO -- Instanciation
+2018-07-29 02:54:46,587 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:54:46] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:54:46,629 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:54:46] "GET /static/image/profileicon/1594.png HTTP/1.1" 200 -
+2018-07-29 02:54:46,663 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:54:46] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:55:36,013 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:55:37,373 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/fak?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:55:37,391 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:55:39,010 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/20750426?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:55:39,028 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:55:40,647 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:55:40,654 -- root -- INFO -- Instanciation
+2018-07-29 02:55:40,662 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:55:42,160 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:55:42,170 -- root -- INFO -- Instanciation
+2018-07-29 02:55:42,177 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): kr.api.riotgames.com
+2018-07-29 02:55:43,717 -- urllib3.connectionpool -- DEBUG -- https://kr.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:55:43,728 -- root -- INFO -- Instanciation
+2018-07-29 02:55:43,731 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:55:43] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:55:43,810 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:55:43] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:55:49,993 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:55:55,379 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:55:55,606 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 126
+2018-07-29 02:55:55,634 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:55:55,962 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/33734740?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:55:55,971 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:55:56,189 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:55:56,201 -- root -- INFO -- Instanciation
+2018-07-29 02:55:56,213 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:55:56,429 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 71
+2018-07-29 02:55:56,438 -- root -- INFO -- Instanciation
+2018-07-29 02:55:56,453 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:55:56,670 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=fr_FR&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 71
+2018-07-29 02:55:56,676 -- root -- INFO -- Instanciation
+2018-07-29 02:55:56,698 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:55:56] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:55:56,745 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:55:56] "GET /static/image/profileicon/507.png HTTP/1.1" 200 -
+2018-07-29 02:55:56,786 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:55:56] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:58:05,623 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:58:11,814 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:12,072 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:58:12,091 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:12,356 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/33734740?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:58:12,387 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:12,598 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:58:12,606 -- root -- INFO -- Instanciation
+2018-07-29 02:58:12,617 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:12,850 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:58:12,856 -- root -- INFO -- Instanciation
+2018-07-29 02:58:12,875 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:13,095 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 71
+2018-07-29 02:58:13,102 -- root -- INFO -- Instanciation
+2018-07-29 02:58:13,166 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:58:13] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:58:13,218 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:58:13] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:58:52,816 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:58:55,262 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:55,525 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 126
+2018-07-29 02:58:55,553 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:55,819 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/33734740?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:58:55,844 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:56,055 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:58:56,065 -- root -- INFO -- Instanciation
+2018-07-29 02:58:56,077 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:56,285 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 71
+2018-07-29 02:58:56,298 -- root -- INFO -- Instanciation
+2018-07-29 02:58:56,312 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:58:56,518 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 None
+2018-07-29 02:58:56,528 -- root -- INFO -- Instanciation
+2018-07-29 02:58:56,589 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:58:56] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:58:56,628 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:58:56] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:58:56,755 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:58:56] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:59:25,416 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:25,718 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 126
+2018-07-29 02:59:25,734 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:26,003 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/33734740?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:59:26,025 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:26,239 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 404 71
+2018-07-29 02:59:26,248 -- root -- INFO -- Instanciation
+2018-07-29 02:59:26,258 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:26,484 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:59:26,493 -- root -- INFO -- Instanciation
+2018-07-29 02:59:26,502 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:26,753 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:59:26,761 -- root -- INFO -- Instanciation
+2018-07-29 02:59:26,763 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:59:26] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:59:26,853 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:59:26] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 02:59:56,024 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 02:59:58,203 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:58,425 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 126
+2018-07-29 02:59:58,444 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:58,763 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/33734740?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 02:59:58,783 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:58,993 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:59:58,999 -- root -- INFO -- Instanciation
+2018-07-29 02:59:59,008 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:59,212 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:59:59,220 -- root -- INFO -- Instanciation
+2018-07-29 02:59:59,230 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 02:59:59,492 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 02:59:59,500 -- root -- INFO -- Instanciation
+2018-07-29 02:59:59,567 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:59:59] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 02:59:59,658 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 02:59:59] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 03:00:32,126 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:00:32,397 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 126
+2018-07-29 03:00:32,419 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:00:32,705 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/33734740?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:00:32,732 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:00:32,974 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 03:00:32,982 -- root -- INFO -- Instanciation
+2018-07-29 03:00:32,991 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:00:33,191 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 03:00:33,197 -- root -- INFO -- Instanciation
+2018-07-29 03:00:33,208 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:00:33,417 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/0?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 03:00:33,429 -- root -- INFO -- Instanciation
+2018-07-29 03:00:33,433 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:00:33] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 03:00:33,518 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:00:33] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 03:01:52,865 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 03:01:54,407 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:01:54,676 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 126
+2018-07-29 03:01:54,696 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:01:54,957 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/33734740?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:01:54,979 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:01:55,195 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/11?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 62
+2018-07-29 03:01:55,203 -- root -- INFO -- Instanciation
+2018-07-29 03:01:55,217 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:01:55,475 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/157?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 None
+2018-07-29 03:01:55,483 -- root -- INFO -- Instanciation
+2018-07-29 03:01:55,498 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): eun1.api.riotgames.com
+2018-07-29 03:01:55,701 -- urllib3.connectionpool -- DEBUG -- https://eun1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/38?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 429 None
+2018-07-29 03:01:55,711 -- root -- INFO -- Instanciation
+2018-07-29 03:01:55,776 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:01:55] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 03:01:55,852 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:01:55] "GET /static/image/champion/%3Cclass%20'str'%3E.png HTTP/1.1" 404 -
+2018-07-29 03:02:27,579 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 03:02:33,512 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:34,566 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:02:34,594 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:36,193 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/3269809?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:02:36,219 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:37,834 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/8?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:02:37,846 -- root -- INFO -- Instanciation
+2018-07-29 03:02:37,858 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:39,298 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/40?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:02:39,309 -- root -- INFO -- Instanciation
+2018-07-29 03:02:39,330 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:41,107 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/64?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:02:41,119 -- root -- INFO -- Instanciation
+2018-07-29 03:02:41,153 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:02:41] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 03:02:41,161 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:42,336 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 125
+2018-07-29 03:02:42,356 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:43,566 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/3269809?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:02:43,587 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:44,790 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/8?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:02:44,794 -- root -- INFO -- Instanciation
+2018-07-29 03:02:44,796 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:46,841 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/40?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 98
+2018-07-29 03:02:46,848 -- root -- INFO -- Instanciation
+2018-07-29 03:02:46,854 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:02:48,069 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/64?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 102
+2018-07-29 03:02:48,081 -- root -- INFO -- Instanciation
+2018-07-29 03:02:48,085 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:02:48] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 03:02:48,189 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:02:48] "GET /static/image/profileicon/593.png HTTP/1.1" 200 -
+2018-07-29 03:02:48,212 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:02:48] "GET /static/image/champion/Vladimir.png HTTP/1.1" 200 -
+2018-07-29 03:02:48,220 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:02:48] "GET /static/image/champion/Janna.png HTTP/1.1" 200 -
+2018-07-29 03:02:48,236 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:02:48] "GET /static/image/champion/Lee%20Sin.png HTTP/1.1" 404 -
+2018-07-29 03:04:33,057 -- werkzeug -- INFO --  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-07-29 03:04:38,468 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:04:39,491 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 125
+2018-07-29 03:04:39,512 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:04:40,713 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/3269809?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:04:40,727 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:04:42,348 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/8?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 97
+2018-07-29 03:04:42,357 -- root -- INFO -- Instanciation
+2018-07-29 03:04:42,365 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:04:43,748 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/40?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 98
+2018-07-29 03:04:43,761 -- root -- INFO -- Instanciation
+2018-07-29 03:04:43,771 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): br1.api.riotgames.com
+2018-07-29 03:04:45,010 -- urllib3.connectionpool -- DEBUG -- https://br1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/64?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 102
+2018-07-29 03:04:45,023 -- root -- INFO -- Instanciation
+2018-07-29 03:04:45,074 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:04:45] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 03:04:45,113 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:04:45] "GET /static/image/champion/LeeSin.png HTTP/1.1" 200 -
+2018-07-29 03:06:29,472 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:30,897 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:06:30,917 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:31,791 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/9150217?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:06:31,816 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:33,359 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/103?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 101
+2018-07-29 03:06:33,372 -- root -- INFO -- Instanciation
+2018-07-29 03:06:33,380 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:34,175 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/238?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:06:34,185 -- root -- INFO -- Instanciation
+2018-07-29 03:06:34,196 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:34,989 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/99?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 101
+2018-07-29 03:06:34,999 -- root -- INFO -- Instanciation
+2018-07-29 03:06:35,002 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:06:35] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 03:06:35,020 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:36,221 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/summoner/v3/summoners/by-name/faker?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:06:36,241 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:37,869 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/champion-mastery/v3/champion-masteries/by-summoner/9150217?api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:06:37,889 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:39,496 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/103?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 101
+2018-07-29 03:06:39,506 -- root -- INFO -- Instanciation
+2018-07-29 03:06:39,512 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:41,135 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/238?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 104
+2018-07-29 03:06:41,145 -- root -- INFO -- Instanciation
+2018-07-29 03:06:41,151 -- urllib3.connectionpool -- DEBUG -- Starting new HTTPS connection (1): la1.api.riotgames.com
+2018-07-29 03:06:42,775 -- urllib3.connectionpool -- DEBUG -- https://la1.api.riotgames.com:443 "GET /lol/static-data/v3/champions/99?locale=en_US&tags=tags&api_key=RGAPI-f88a7b97-0a53-48fb-9b79-9dba8339168b HTTP/1.1" 200 None
+2018-07-29 03:06:42,789 -- root -- INFO -- Instanciation
+2018-07-29 03:06:42,793 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:06:42] "POST /searchUser HTTP/1.1" 200 -
+2018-07-29 03:06:42,855 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:06:42] "GET /static/image/profileicon/1427.png HTTP/1.1" 200 -
+2018-07-29 03:06:42,865 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:06:42] "GET /static/image/champion/Ahri.png HTTP/1.1" 200 -
+2018-07-29 03:06:42,875 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:06:42] "GET /static/image/champion/Zed.png HTTP/1.1" 200 -
+2018-07-29 03:06:42,897 -- werkzeug -- INFO -- 127.0.0.1 - - [29/Jul/2018 03:06:42] "GET /static/image/champion/Lux.png HTTP/1.1" 200 -

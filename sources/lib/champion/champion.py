@@ -40,6 +40,133 @@ A Champion has different attribute:
 
     -partype String (What does the spell cost (MANA/RAGE...))
 """
+import logging as log
+
+log.basicConfig(filename='app.log',level=log.DEBUG,
+                format='%(asctime)s -- %(name)s -- %(levelname)s -- %(message)s')
+
+from utilities import Utility
+from .skins import Skin
+from .spell import Spell
+
+
+class Champion:
+
+    def __init__(self):
+        # Champion characteristics
+        self.id = int
+        self.passive = dict
+
+        # Stats
+        self.hpregenperlevel = float
+        self.armor = float
+        self.attackdamage = float
+        self.mpregenperlevel = float
+        self.attackrange = float
+        self.armorperlevel = float
+        self.hp = float
+        self.hpperlevel = float
+        self.spellblockperlevel = float
+        self.spellblock = float
+        self.mp = float
+        self.attackdamageperlevel = float
+        self.critperlevel = float
+        self.crit = float
+        self.movespeed = float
+        self.hpregen = float
+        self.attackspeedoffset = float
+        self.mpperlevel = float
+        self.mpregen = float
+        self.attackspeedperlevel = float
+
+        self.skins = None
+        self.spells = None
+        self.tags = list
+
+        self.lore = str
+        self.name = str
+        self.partype = str
+        self.title = str
+        log.info('Instanciation')
+
+    @classmethod
+    def initialize_champion_from_riot_json(cls, champion_json):
+        obj = cls()
+        tab_properties = [cle for cle in champion_json.keys() if cle in Utility.TAB_CHARACTERISTICS_CHAMPION]
+        for key in tab_properties:
+            print(key)
+            value = champion_json[key]
+            if key in 'skins' and value is not None:
+                tab_skin = [Skin(id=element['id'], name=element['name'], num=element['num']) for element in value]
+                object.__setattr__(obj, key,tab_skin)
+            elif key in ['stats', 'info']:
+                for key_stats, value_stats in value.items():
+                    object.__setattr__(obj, key_stats, value_stats)
+            # Spells got to many attributes to do like skin
+            elif key in 'spells' and value is not None:
+                tab = []
+                for element in value:
+                    spell = Spell()
+                    for key_spell, value_spell in element.items():
+                        if key_spell in 'image':
+                            value_spell = value_spell['full']
+                        spell.__setattr__(key_spell, value_spell)
+                    tab.append(spell)
+                object.__setattr__(obj, key, tab)
+            else:
+                object.__setattr__(obj, key, value)
+        return obj
+
+    def __str__(self):
+        return format("Champion's name : {}\nID : {}\nTitle : {}\nParType : {}\n"
+                      "Tags : {}\nSpells : {}\n"
+                      "Passive : {}\nLore : {}\nSkins : {}\n".format(self.name,self.id,self.title,self.partype,
+                                                                     self.tags,self.spells,
+                                                                     self.passive,self.lore,self.skins))
+
+
+"""
+This file is the implementation of a champion on league of legends.
+The corresponding endpoint is: /lol/static-data/v3/champions/{id}
+A Champion has different attribute:
+    - champion_id integer (Id of the champion [id])
+    - name: string (Name of the champion [name])
+    - title: string (Title of the champion [title])
+    - image: string (Name of the image of the champion [image][full])
+    - tags: list of string (Tags related to the function of the champion [tags])
+    - passive: Passive (Passive of the champion [passive])
+    - spells: list of Spell (List of spells that the champion can use [spells])
+    - ally_tips: list of string (List of tips for the ally of the champion [allytips])
+    - enemy_tips: list of string (List of tips for the ennemy of the champion [allytips])
+    - lore: String (History of the champion [lore])
+
+    - armor_per_level: integer (Armor per level for this champion [stats][armorperlevel])
+    - attack_damage: float (Attack damage for this champion [stats][attackdamage])
+    - mp_per_level: integer (MP per level for this champion [stats][mpperlevel])
+    - mp: float (MP for this champion [stats][mp])
+    - armor: float (Armor for this champion [stats][armor])
+    - hp: float (hp for this champion [stats][hp])
+    - hp_regen_per_level: float (HP regeneration per level for this champion [stats][hpregenperlevel])
+    - attack_speed_per_level: float (Attack speed per level for this champion [stats][attackspeedperlevel])
+    - attack_range: integer (Attack range for this champion [stats][attackrange])
+    - move_speed: integer (Move speed for this champion [stats][movespeed])
+    - attack_damage_per_level: float (Attack damage per level for this champion [stats][attackdamageperlevel])
+    - mp_regen_per_level: float (MP regeneration per level for this champion [stats][mpregenperlevel])
+    - crit_per_level: integer (Critical hit per level for this champion [stats][critperlevel])
+    - spell_block_per_level: float (Spell block per level for this champion [stats][spellblockperlevel])
+    - crit: integer (Critical hit for this champion [stats][crit])
+    - mp_regen: integer (MP regeneration for this champion [stats][mpregen])
+    - spell_block: integer (Spell block for this champion [stats][spellblock])
+    - hp_regen: float (HP regeneration for this champion [stats][hpregen])
+    - hp_per_level: integer (HP per level for this champion [stats][hpperlevel])
+
+    - difficulty_level: integer (Level of difficulty to play this champion [info][difficulty])
+    - attack_level: integer (Attack level of the champion [info][attack])
+    - defense_level: integer (Defense level of the champion [info][defense])
+    - magic_level: integer (Magic level of the champion [info][magic])
+
+    -partype String (What does the spell cost (MANA/RAGE...))
+
 
 import json
 
@@ -250,3 +377,4 @@ class Champion:
         )
 
 
+"""
